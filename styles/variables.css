@@ -1,0 +1,7 @@
+:root {
+    /* ПО УМОЛЧАНИЮ ТЕМНАЯ ТЕМА */
+  --main-color-text: rgb(252, 250, 151);
+  --button-color: rgb(187, 178, 240);   
+  --button-color-active: rgb(252, 250, 151);
+  --text-shadow-color: #ff00dd; 
+}

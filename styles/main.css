@@ -1,0 +1,27 @@
+/* Swiper styles */
+.swiper {
+	margin: 50px auto;
+	max-width: 1800px;
+	padding-bottom: 50px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+    object-fit: cover;
+    object-position: center;
+	height: 400px;
+}
+
+@media (width < 1000px) {
+	.swiper-slide img {
+		object-fit: contain;
+	}
+}
+
+.no-select {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE/Edge */
+	user-select: none; /* Стандартный синтаксис */
+}

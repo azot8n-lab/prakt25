@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Лавка пердметов</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="icon" href="./images/ava.jpeg" type="image/svg+xml" />
+    <link rel="mobile-icon" href="./images/ava.jpeg" />
+  </head>
+<body class="page">
+
+    <header class="header">
+      <!-- КНОПКИ ПЕРЕКЛЮЧЕНИЯ ТЕМ -->
+      <nav class="header__theme-menu">
+        <ul class="header__theme-menu-list">
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+            >
+              День
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              disabled
+            >
+              Авто
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_dark"
+            >
+              Вечер
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="header__introduction__title">Лавка пердметов</h1>
+      
+      <div class="cart" style="display: none">
+        <h2>Корзина</h2>
+        <div class="cart-items"></div>
+        <p class="total-price">Итого: 0 рублей</p>
+        <div class="checkout-button-container">
+          <button class="checkout-button" style="display: none">
+            К оплате
+          </button>
+        </div>
+      </div>
+
+      <ul class="header__block">
+        <li>
+          <img
+            class="32740fd9d8511f7733490bd4129e906b.jpg"
+            src="./images/header-menu-img/32740fd9d8511f7733490bd4129e906b.jpg"
+            alt="Ивенты"
+          />
+          <a href="#instruments-href">Ивенты</a>
+        </li>
+        <li>
+          <img
+            class="27bf74ee1b3173feacd247a1f34e943a.jpg"
+            src="./images/header-menu-img/27bf74ee1b3173feacd247a1f34e943a.jpg"
+            alt="Одежда"
+          />
+          <a href="#wears-href">Одежда</a>
+        </li>
+        <li>
+          <img
+            class="suvenirs"
+            src="./images/header-menu-img/8f8a8236db2ec3112b853d23d3d4d338.jpg"
+            alt="Сертификат"
+          />
+          <a href="#suvenirs-href">Сертификат</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="container">
+      <section class="swiper no-select">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/main-gallery/d20-dice.gif" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/main-gallery/d20-roll20.gif" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/main-gallery/de31f95895aedc25cc62d0b8ab5e66af.gif" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/main-gallery/ginny-di-d20.gif" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/main-gallery/nat-20-baldur's-gate.gif" alt="Photo" />
+          </div>
+        </div>
+      </section>
+
+      <hr style="border: 1px solid yellow" />
+
+      <h2 id="instruments-href" class="instruments__title">Ивенты</h2>
+
+      <section class="swiper no-select">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./images/ivent/zamok.jpg"
+              alt="Photo"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/ivent/cot.jpg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/ivent/drakon.jpg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/ivent/pilsa-f.jpeg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/ivent/festival.jpg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/ivent/graf-p.jpeg" alt="Photo" />
+          </div>
+        </div>
+      </section>
+      <section class="main">
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Граф полукровка</h3>
+          <div class="image">
+            <img
+              src="./images/ivent/graf-p.jpeg"
+              alt="Граф полукровка"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="add-to-cart-btn font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Тёмная сага о власти, предательстве и крови
+В землях Империи разгорается пламя заговора. В центре событий — загадочный полукровка, возведённый в графское достоинство вопреки всем законам общества. Его происхождение — тайна, его сила — угроза, его амбиции — вызов устоявшемуся порядку.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Кот который не долженбыл выжить</h3>
+          <div class="image">
+            <img
+              src="./images/ivent/cot.jpg"
+              alt="Кот который не должен юыл выжить"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Эпическое приключение, где пушистый комочек шерсти изменит судьбу целого мира
+Внимание! В этой кампании вы столкнётесь с самым необычным компаньоном в истории Dungeons & Dragons. Кот, который выжил там, где не должен был, и теперь его судьба переплетена с судьбой ваших героев.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Пыльца фей</h3>
+          <div class="image">
+            <img
+              src="./images/ivent/pilsa-f.jpeg"
+              alt="Пыльца фей"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Кошмар, таящийся в каждом цветке
+В тени цветущих садов пробуждается древнее зло. Пыльцафей — существа, рождённые из самой сущности цветов, но несущие в себе тьму, о которой никто не подозревал. Их красота обманчива, а прикосновения смертоносны.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Последний фестиваль</h3>
+          <div class="image">
+            <img
+              src="./images/ivent/festival.jpg"
+              alt="Последний фестиваль"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            ПрофесКогда праздник становится проклятием
+В ночь полнолуния древний город погружается в кровавый карнавал. То, что начиналось как празднование урожая, превратилось в кошмар, где каждый гость — потенциальная жертва, а каждый танец — шаг к погибели.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Длинный путь</h3>
+          <div class="image">
+            <img
+              src="./images/ivent/put.jpg"
+              alt="Длинный путь"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            ПрофесПраздник, который изменит судьбу мира
+Величественный карнавал расцветает в самом сердце древнего королевства. Грандиозное событие, собирающее тысячи гостей со всех уголков мира, обещает стать самым ярким зрелищем года. Но никто не подозревает, что этот фестиваль — последнее торжество перед грядущими тёмными временами.
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Замок Дракулы</h3>
+          <div class="image">
+            <img
+              src="./images/ivent/zamok.jpg"
+              alt="Замок Дракулы"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            В сердце тьмы, где тени оживают
+Древняя крепость возвышается на скале, словно когтистый кулак, вонзающийся в небо. Мрачные башни хранят секреты веков, а мёртвые камни помнят крики тех, кто осмелился бросить вызов хозяину этих мест. Здесь, в самом сердце Трансильвании, начинается ваше падение во тьму.
+          </p>
+        </div>
+      </section>
+
+      <hr style="border: 1px solid yellow" />
+
+      <h2 id="wears-href" class="wears__title">ОДЕЖДА</h2>
+
+      <section class="swiper no-select">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/wears/svit2.jpeg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/wears/fut1.jpeg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/wears/fut2.jpeg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/wears/svit1.jpeg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/wears/cepk.jpeg" alt="Photo" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/wears/nav.jpeg" alt="Photo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="main">
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Футболка</h3>
+          <div class="image">
+            <img
+              src="./images/wears/fut1.jpeg"
+              alt="Футболка"
+            />
+          </div>
+          <p class="font-effect-fire-animation">5000 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Футболка «ADVENTURES PACK» — это настоящий кладезь приключений, упакованный в стильный дизайн! На черном фоне изображены символы, которые переносят вас в мир фантазий и загадок.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Футболка</h3>
+          <div class="image">
+            <img
+              src="./images/wears/fut2.jpeg"
+              alt="Футболка"
+            />
+          </div>
+          <p class="font-effect-fire-animation">5000 рублей</p>
+          <button class="font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Футболка «ADVENTURES PACK» — это настоящий кладезь приключений, упакованный в стильный дизайн! На черном фоне изображены символы, которые переносят вас в мир фантазий и загадок.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Свитшот</h3>
+          <div class="image">
+            <img
+              src="./images/wears/svit1.jpeg"
+              alt="Свитшот"
+            />
+          </div>
+          <p class="font-effect-fire-animation">15000 рублей</p>
+          <button class="add-to-cart-btn font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Лонгслив «Сфинктерион Левенхарт» — это не просто одежда, а настоящее произведение искусства для любителей фэнтези и ролевых игр! На черном фоне изображен персонаж с огненными волосами и доспехами, который выглядит как настоящий воин. Его характеристики, такие как «Сила +5», «Ловкость +1» и «Устойчивость +2», добавляют образу эпичности и делают его идеальным для косплея или тематических вечеринок.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Свитшот</h3>
+          <div class="image">
+            <img
+              src="./images/wears/svit2.jpeg"
+              alt="Свитшот"
+            />
+          </div>
+          <p class="font-effect-fire-animation">15000 рублей</p>
+          <button class="add-to-cart-btn font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Лонгслив с ярким и запоминающимся дизайном, который сочетает в себе элементы мистики и современного искусства. На спине изображён рогатый демон в синем круге, окружённый красными и синими драконами, что создаёт атмосферу загадочности и силы. Надпись «Я тебя не боюсь, я тебя уничтожу, потому что не знаю, что это такое, но боюсь, что это снова повторится» добавляет драматизма и подчёркивает бунтарский дух.
+          </p>
+        </div>
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Кепка</h3>
+          <div class="image">
+            <img
+              src="./images/wears/cepk.jpeg"
+              alt="Кепка"
+            />
+          </div>
+          <p class="font-effect-fire-animation">4000 рублей</p>
+          <button class="add-to-cart-btn font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Кепка отлично подойдёт как для повседневной носки, так и для создания модного уличного стиля. Её универсальный чёрный цвет легко сочетается с любой одеждой, а удобный регулируемый ремешок обеспечивает идеальную посадку.
+          </p>
+        </div>
+       <div class="main__left">
+          <h3 class="font-effect-fire-animation">Кофта для подушки</h3>
+          <div class="image">
+            <img
+              src="./images/wears/nav.jpeg"
+              alt="Кофта для подушки"
+            />
+          </div>
+          <p class="font-effect-fire-animation">4000 рублей</p>
+          <button class="add-to-cart-btn font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+            Профессиональная барабанная установка Полноразмерная установка для
+            настоящих виртуозов ударных инструментов. Идеально подходит как для
+            репетиций, так и для живых выступлений. Прочная конструкция,
+            качественные материалы и безупречное звучание каждого элемента.
+            Отличный выбор для музыкантов любого уровня.
+          </p>
+        </div>
+      </section>
+
+      <hr style="border: 1px solid yellow" />
+
+      <h2 id="suvenirs-href" class="suvenirs-title">сертификаты</h2>
+      <section class="main">
+        <div class="main__left">
+          <h3 class="font-effect-fire-animation">Сертификат</h3>
+          <div class="image">
+            <img
+              src="./images/sert/sert.jpg"
+              alt="Сертификат"
+            />
+          </div>
+          <p class="font-effect-fire-animation">3790 рублей</p>
+          <button class="add-to-cart-btn font-effect-fire-animation">Добавить в корзину</button>
+        </div>
+        <div class="main__right">
+          <p class="font-effect-fire-animation">
+           Сертификат на участие в захватывающей игре Dungeons & Dragons
+Подарите незабываемые приключения в мире фэнтези!
+Уникальный подарок для истинных ценителей ролевых игр. Сертификат предоставляет возможность погрузиться в захватывающий мир Dungeons & Dragons под руководством опытного мастера.
+          </p>
+        </div>
+        
+      </section>
+    </main>
+
+    <h2 id="another-href" class="another__title">О НАС</h2>
+    <footer class="footer">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7911462c5d373aac33dcf1e59a993bc3c0b101addaa6d2e6923c2ef00f1ab16&amp;source=constructor"
+        width="800"
+        height="800"
+        frameborder="0"
+      >
+      </iframe>
+
+      <ul class="footer__links">
+        <li><a href="+7 499 230-22-76">+7 499 230-22-76</a></li>
+        <li><a href="MTUCI@yandex.ru">MTUCI@yandex.ru</a></li>
+      </ul>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/korzina.js"></script>
+  </body>
+</html>

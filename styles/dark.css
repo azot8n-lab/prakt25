@@ -1,0 +1,20 @@
+.page.theme_dark {
+  background-image: url(../images/zad-image/RUXO.gif);
+  --main-color-text: rgb(252, 250, 151); 
+  --button-color: rgb(187, 178, 240); 
+  --button-color-active: rgb(252, 250, 151);
+  --text-shadow-color: #ff00dd; 
+background-attachment: fixed;
+ background-size: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-image: url(../images/zad-image/RUXO.gif);
+    --main-color-text: rgb(252, 250, 151); 
+    --button-color: rgb(187, 178, 240); 
+    --button-color-active: rgb(252, 250, 151);
+    --text-shadow-color: #ff00dd; 
+  background-attachment: fixed;
+  }
+}

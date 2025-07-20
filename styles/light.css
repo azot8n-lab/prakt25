@@ -1,0 +1,23 @@
+.page.theme_light {
+  background-image: url(../images/zad-image/cob.gif);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  --main-color-text: rgb(85, 53, 6);  
+  --button-color: rgb(40, 252, 216);
+  --button-color-active: rgb(41, 240, 14);
+  --text-shadow-color: rgb(248, 212, 11);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-image: url(../images/zad-image/cob.gif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    --main-color-text: rgb(85, 53, 6); 
+    --button-color: rgb(40, 252, 216);
+    --button-color-active: rgb(41, 240, 14);
+    --text-shadow-color: rgb(247, 11, 22);
+  }
+}
