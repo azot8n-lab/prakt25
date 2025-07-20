@@ -1,1 +1,1 @@
-https://github.com/Egorcss/PROJECT-VUZ.git
+https://github.com/azot8n-lab/prakt25.git
